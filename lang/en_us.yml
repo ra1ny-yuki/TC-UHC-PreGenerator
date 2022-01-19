@@ -1,0 +1,60 @@
+pregen:
+  help:
+    mcdr: Pre-generate world and save before playing
+    detailed: | 
+      §7---- §cT§9opology§cC§9raft§e UHC §6Pre-Generator §7----
+      Pre-generate terrain for further game
+      §7{prefix} reload §rReload this plugin
+      §7{prefix} gen§8erate §e<slot_amount> §b[comment]§r Pre-generate the specified amount of worlds
+      §7{prefix} list§r View all the pre-generated worlds
+      §7{prefix} remove§6 <slot_name>§r Remove a pre-generated world
+      §7{prefix} autoremove§r Auto remove used slots and useless file
+      §7{prefix} load §6<slot_name> §rLoad specified slot
+      §7{prefix} next§r Load next pre-generated worlds
+      §7{prefix} info§6 <slot_name>§r View slot info
+
+  hover:
+    suggest: Click to fill §7{}§r
+    help: Click to view help message
+    to_confirm: Click to §aconfirm§r session
+    to_abort: Click to §ccancel§r session
+    load: Click to load §e{}§r
+    list: Click to list all slots
+    remove: Click to remove §e{}§r
+    info: Click to view info of §e{}§r
+
+  msg:
+    aborted: Session §ccancelled§r
+    countdown: Restart server after {} seconds...
+    start_pregen: Server will restart after §e{}§r seconds to pre-generate worlds
+    finished_load: Finished generate terrain, server will restart after §e{}§r seconds to load a new one
+    auto_removed: Automatically removed §e{}§r used slots and other useless files
+    before_load: Server will restart after §e{}§r seconds to load a pre-generated world
+    confirm_abort: Use {} to §aconfirm§r, {} to §ccancel§r session
+    removed: Removed slot §e{}§r
+    info_title: 'Pre-generated §e{}§r worlds (max §6{}§r):'
+    reloaded: Plugin reloaded
+
+  info:
+    used: 'Used: §e{}§r'
+    size: 'Size: §6{}§r'
+    time: 'Generate time: §e{}§r'
+    comment: 'Comment: §6{}§r'
+
+  ask:
+    pregen: Are you sure to §6restart§r and §cpre-generate§r §e{}§r worlds?
+    load: Are you sure to §6restart§r and §cload§r pre-generated world §e{}§r?
+    remove: Are you sure to §cremove§r pre-generated world §e{}§r?
+    auto_remove: Are you sure to §cauto-remove§r useless files and slots?
+
+  error:
+    cmd: Command error! Click here to view help message
+    perm: 'Permission denied: {}'
+    occurred: 'Error occurred: {}'
+    no_such_slot: Slot not found! Click her to view slot list
+    no_session: There is nothing to confirm/abort
+    session_already_running: Current session is already running
+    backup_failed: 'Failed to back this world up: {exc}'
+    slot_not_found: Slot §e{}§r is not found, click here to view all the slots
+    not_avail: Session is not available
+    not_enough_slot: Remaining slot amount is not adequate
