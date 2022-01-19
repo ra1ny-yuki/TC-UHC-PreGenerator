@@ -2,7 +2,10 @@
     "id": "tcuhc_pregen",
     "version": "0.1.0",
     "name": "TC UHC Pre-generator",
-    "description": "Pre-generate world and save before playing",
+    "description": {
+        "en_us": "Pre-generate world and save before playing",
+        "zh_cn": "让鲨鲨可以连轴卷的预载工具"
+    },
     "author": [
         "Ra1ny_Yuki"
     ],
@@ -12,6 +15,6 @@
     },
 
     "resources": [
-        "lang"
+        "lang", "LICENSE", "requirements.txt"
     ]
 }
