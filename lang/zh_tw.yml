@@ -1,0 +1,60 @@
+pregen:
+  help:
+    mcdr: 預先加載地形，讓鯊鯊可以連軸卷
+    detailed: | 
+      §7---- §cT§9opology§cC§9raft§e UHC §6Pre-Generator §7----
+      鯊鯊連軸卷利器，地形預先生成器耶
+      §7{prefix} reload §r重新加載這個插件
+      §7{prefix} gen§8erate §e<數目> §b[註]§r 預先加載指定槽位數個世界
+      §7{prefix} list§r 查看所有預先加載的世界
+      §7{prefix} remove§6 <槽位名>§r 刪除一個預先加載的世界
+      §7{prefix} autoremove§r 自動刪除用過的世界和垃圾文件
+      §7{prefix} load §6<槽位名> §r加載指定槽位的預先加載世界
+      §7{prefix} next§r 加載下一槽位的預先加載世界，開卷！
+      §7{prefix} info§6 <槽位名>§r 查看指定槽位的細節
+
+  hover:
+    suggest: 點這裏填入 §7{}§r
+    help: 點這裏有幫助信息喔
+    to_confirm: 點這裏§a確認§r事件
+    to_abort: 點這裏§c中止§r事件
+    load: 點這裏加載預先生成的世界槽位 §e{}§r
+    list: 點這裏看所有預先生成的世界
+    remove: 點這裏移除預先生成的世界 §e{}§r
+    info: 點這裏看槽位 §e{}§r 的細節
+
+  msg:
+    aborted: 事件§c已經停了喔§r
+    countdown: {} 秒後重新啓動伺服器端...
+    start_pregen: §e{}§r 秒後重新啓動伺服器端預先加載地形
+    finished_load: 地形預先加載好了喔, 伺服器端會在 §e{}§r 秒後重新啓動來加載下一個
+    auto_removed: 自動刪掉了 §e{}§r 用過的世界和垃圾喔
+    before_load: §e{}§r 秒後重新啓動伺服器端加載一個預先加載好的世界
+    confirm_abort: 用 {} 來§a確認§r, {} 來§c中止§r事件
+    removed: 已經刪掉了預先生成好的世界 §e{}§r 喔
+    info_title: '這裏是已經生成好的 §e{}§r 個世界喔 (最多 §6{}§r 個槽位):'
+    reloaded: 插件重新加載好了喔
+
+  info:
+    used: '有沒有用過: §e{}§r'
+    size: '有多大啊: §6{}§r'
+    time: '甚麼時候生成的: §e{}§r'
+    comment: '注: §6{}§r'
+
+  ask:
+    pregen: 要§6重新啓動§r伺服器端來§c預先生成§r §e{}§r 個世界喔，你確定嗎?
+    load: 要§6重新啓動§r伺服器端來§c加載§r預先生成好的世界 §e{}§r 喔，你確定嗎?
+    remove: 要§c刪掉§r預先生成的世界 §e{}§r 喔，你確定嗎?
+    auto_remove: 要§c自动刪掉§r用不到的文件和用過的世界喔，你確定嗎?
+
+  error:
+    cmd: 命令輸錯了啦，都怪你啦! 這裏是幫助信息喔
+    perm: '慾求不滿，想桃子呢你: {}'
+    occurred: '出現錯誤了啦rue: {}'
+    no_such_slot: 槽位沒找到誒! 這裏有預先生成好的世界列表喔
+    no_session: 沒有事件要確認或者取消了啦
+    session_already_running: 這個事件已經在跑了啦
+    backup_failed: '存檔備份失敗了誒: {exc}'
+    slot_not_found: 槽位 §e{}§r 沒找到誒! 這裏有預先生成好的世界列表喔
+    not_avail: 這個插件沒空理你喔
+    not_enough_slot: 沒有槽位了啦，不要再塞了了啦！

@@ -1,0 +1,60 @@
+pregen:
+  help:
+    mcdr: UHC地形预载
+    detailed: | 
+      §7---- §cT§9opology§cC§9raft§e UHC §6Pre-Generator §7----
+      为之后的UHC游戏预载游戏地形
+      §7{prefix} reload §r重载插件
+      §7{prefix} gen§8erate §e<槽位数> §b[备注]§r 预载指定槽位数个的世界
+      §7{prefix} list§r 查阅所有预载的世界
+      §7{prefix} remove§6 <槽位数>§r 移除一个预载世界
+      §7{prefix} autoremove§r 自动清理已使用过的预载世界和垃圾文件
+      §7{prefix} load §6<槽位名> §r加载一个指定槽位的预载世界
+      §7{prefix} next§r 加载下一个槽位的预载世界
+      §7{prefix} info§6 <槽位名>§r 查阅指定槽位的预载世界名称
+
+  hover:
+    suggest: 点此以填入 §7{}§r
+    help: 点此查阅帮助信息
+    to_confirm: 点击以§a确认§r会话
+    to_abort: 点击以§c取消§r会话
+    load: 点此以加载槽位 §e{}§r
+    list: 点此以列出所有预载的世界
+    remove: 点击移除槽位 §e{}§r
+    info: 点击查阅槽位 §e{}§r 的详细信息
+
+  msg:
+    aborted: 会话 §c已中止§r
+    countdown: {} 秒后重启服务端...
+    start_pregen: §e{}§r 秒后重启服务端预载世界
+    finished_load: 地形预载完成, 服务端将在 §e{}§r 秒后重启加载下一个
+    auto_removed: 自动移除了 §e{}§r 已使用的槽位及其他垃圾文件
+    before_load: §e{}§r 秒后重启服务端加载预载的世界
+    confirm_abort: 使用 {} 以§a确认§r, {} 以§c取消§r会话
+    removed: 已删除槽位 §e{}§r
+    info_title: '已预生成 §e{}§r 个世界 (最大 §6{}§r):'
+    reloaded: 插件已重新加载
+
+  info:
+    used: '已使用: §e{}§r'
+    size: '大小: §6{}§r'
+    time: '生成时间: §e{}§r'
+    comment: '备注: §6{}§r'
+
+  ask:
+    pregen: 将§6重启§r服务端并§c预生成§r §e{}§r 个世界，是否确定?
+    load: 将§6重启§r服务端并§c加载§r预生成的世界 §e{}§r，是否确定?
+    remove: 将§c移除§r预生成世界 §e{}§r，是否确定?
+    auto_remove: 将§c自动清除§r无用文件和用过的槽位，是否确定?
+
+  error:
+    cmd: 命令输入有误! 点此显示帮助信息
+    perm: '约束不满足: {}'
+    occurred: '出现错误: {}'
+    no_such_slot: 槽位不存在! 点此查阅预生成世界槽位列表
+    no_session: 没有需要确认/取消的会话
+    session_already_running: 当前会话已经开始运行
+    backup_failed: '备份世界失败: {exc}'
+    slot_not_found: 槽位 §e{}§r 不存在! 点此查阅预生成世界槽位列表
+    not_avail: 会话繁忙
+    not_enough_slot: 剩余槽位数不足
