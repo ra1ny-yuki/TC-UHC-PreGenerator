@@ -15,10 +15,13 @@ DEBUG = False
 
 def cp(this_file: str, target_file: str, allow_not_found=True):
     if os.path.isfile(this_file):
-        shutil.copy(this_file, target_file)
-        debug_log(f'Copied file "{this_file}" to "{target_file}"')
+        if os.path.basename(this_file) not in config.ignored_files:
+            shutil.copy(this_file, target_file)
+            debug_log(f'Copied file "{this_file}" to "{target_file}"')
+        else:
+            debug_log(f'Ignored file {this_file}')
     elif os.path.isdir(this_file):
-        shutil.copytree(this_file, target_file)
+        shutil.copytree(this_file, target_file, ignore=lambda path, files: set(filter(config.is_file_ignored, files)))
         debug_log(f'Copied folder "{this_file}" to "{target_file}"')
     else:
         debug_log(f'File {this_file} not found')
